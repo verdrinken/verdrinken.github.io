@@ -13,7 +13,7 @@ header.hero {
   background-image: url('images/BUG mafia.jpg'); /* Your image path */
   background-size: cover;
   background-position: center;
-  height: 350px; /* Slightly taller */
+  height: 350px;
   position: relative;
   color: white;
 }
@@ -65,15 +65,6 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #111; /* Dark footer */
-  color: #e0e0e0;
-}
-
 /* === Links inside sections === */
 section a {
   color: #4CAF50; /* Accent color */
@@ -82,4 +73,12 @@ section a {
 
 section a:hover {
   text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111; /* Dark footer */
+  color: #e0e0e0;
 }
