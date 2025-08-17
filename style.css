@@ -59,11 +59,12 @@ section {
   padding: 25px;
   max-width: 800px;
   margin: 20px auto;
-  background-color: #1e1e1e; /* Dark section background */
+  background-color: #1e1e1e !important; /* Dark section background */
   border-radius: 10px;
   color: #e0e0e0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
+
 
 /* === Footer === */
 footer {
