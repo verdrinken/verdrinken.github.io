@@ -1,4 +1,4 @@
-/* style.css */
+/* === General Body === */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -8,58 +8,18 @@ body {
   color: #e0e0e0; /* Light text */
 }
 
-
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  background-color: #1e1e1e; /* Dark background */
-  margin-bottom: 20px;
-  border-radius: 8px;
-  color: #e0e0e0; /* Light text inside sections */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional subtle shadow */
-}
-
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-}
-
-.hero {
-  background-image: url('images/BUG mafia.jpg'); /* Your image */
+/* === Hero Header === */
+header.hero {
+  background-image: url('images/BUG mafia.jpg'); /* Your image path */
   background-size: cover;
   background-position: center;
-  height: 300px; /* Adjust as needed */
+  height: 350px; /* Slightly taller */
   position: relative;
   color: white;
 }
 
-.hero .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+header.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -69,22 +29,56 @@ footer {
   padding: 0 20px;
 }
 
-.hero h1 {
+header.hero h1 {
   font-size: 3rem;
   margin: 0;
 }
 
-.hero nav ul {
+header.hero nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+  margin-top: 15px;
 }
 
-.hero nav a {
-  color: white;
+header.hero nav a {
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
+header.hero nav a:hover {
+  color: #4CAF50; /* Accent color on hover */
+}
+
+/* === Sections (About & Contact) === */
+section {
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #1e1e1e; /* Dark section background */
+  border-radius: 10px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111; /* Dark footer */
+  color: #e0e0e0;
+}
+
+/* === Links inside sections === */
+section a {
+  color: #4CAF50; /* Accent color */
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
